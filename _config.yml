@@ -30,9 +30,9 @@ google_fonts:
     weights: "400,400i,700,700i"
 google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
-  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+  shortname: techpoolx
 twitter:
-  username: # site's Twitter username, e.g. "mmistakes"
+  username: techpoolx
 
 # Liquid
 liquid:
@@ -96,6 +96,12 @@ author:
 
 # Footer Links
 footer_links:
+  - title: Twitter 
+    url: https://twitter.com/techpoolx
+    icon: fab fa-twitter-square
+  - title: Email 
+    url: mailto:techpoolx@gmail.com
+    icon: fas fa-envelope-square
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
