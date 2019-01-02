@@ -16,13 +16,21 @@
 locale: en-US
 title: "Techpool X"
 description: "Thoughts inspired by technology."
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
 baseurl: # the subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+
+# the base hostname & protocol for your site e.g. "https://www.example.com"
+url: https://www.techpoolx.com
+
 logo: "/images/logo.png"
 date_format: "%B %-d, %Y"
-read_time: # reading time estimates, e.g. true
-words_per_minute: # 200
-mathjax: # MathJax equations, e.g. true
+read_time: true
+words_per_minute: 200
+mathjax: true
 google_fonts:
   - name: "Source Sans Pro"
     weights: "400,400i,700,700i"
@@ -39,21 +47,21 @@ liquid:
   error_mode: strict
 
 # Build settings
-permalink: /:categories/:title/
+permalink: /blog/:title.html
 markdown: kramdown
 feed:
   path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
-# paginate: 10
-# paginate_path: /page:num/
+paginate: 10
+paginate_path: /page:num/
 
 # Search
 search_full_content: false # can have performance implications for large sites
 
 # Taxonomy pages
-# category_archive_path: "/categories/#"
-# tag_archive_path: "/tags/#"
+category_archive_path: "/blog/categories/#"
+tag_archive_path: "/blog/tags/#"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -75,33 +83,38 @@ plugins:
 
 # Front Matter Defaults
 defaults:
-  # Posts defaults
+  # Post defaults
   - scope:
       path: "_posts"
       type: posts
     values:
       layout: post
+      comments: true
       share: true
 
 # Site Author
 author:
-  name:
-  picture:
+  name: techpoolx
+  picture: /images/logo.png
   email:
   twitter:
   links:
-    - title:
-      url:
-      icon:
-
+    - title: Twitter
+      url: https://twitter.com/techpoolx
+      icon: fab fa-twitter-square
+    - title: Email
+      url: mailto:techpoolx@gmail.com
+      icon: fas fa-envelope-square
+ 
 # Footer Links
 footer_links:
-  - title: Twitter 
+  - title: Twitter
     url: https://twitter.com/techpoolx
     icon: fab fa-twitter-square
-  - title: Email 
+  - title: Email
     url: mailto:techpoolx@gmail.com
     icon: fas fa-envelope-square
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
+
