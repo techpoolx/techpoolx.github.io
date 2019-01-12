@@ -1,5 +1,5 @@
 ---
-title: 'The side effect of fetching Kafka topic metadata'
+title: 'The Side Effect of Fetching Kafka Topic Metadata'
 excerpt: "Fetching Kafka topic metadata has a side effect that people often overlook. We reproduce it with code examples using kafka-junit and conclude with a very easy to remember note as a reminder."
 categories:
   - Technology Tips
